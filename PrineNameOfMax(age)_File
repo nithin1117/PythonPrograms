@@ -1,0 +1,20 @@
+file = open("new.txt", 'r')
+name = []
+age = []
+for i in file:
+    if '\n' in i:
+        i = i.replace('\n','')
+    l = i.split()
+    name.append(l[0])
+    age.append(int(l[1]))
+
+print(name[age.index(max(age))])
+
+
+
+
+
+# new.txt
+# nithin 12 cbe
+# navin 13 chn
+# nithish 14 krs
