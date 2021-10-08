@@ -1,2 +1,2 @@
-n = int(input())
+n = int(input("enter num:"))
 print(sum(i for i in range(1,n+1)))
